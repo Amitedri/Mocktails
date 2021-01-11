@@ -14,13 +14,14 @@ const Layout = () => {
             </div>
             <div className='column'>
                 <img src={two} alt={two}/>
+                <button>button</button>
             </div>
-            <div className='column'>
+            {/* <div className='column'>
                 <img src={third} alt={third}/>
             </div>
             <div className='column'>
                 <img src={five} alt={five}/>
-            </div>
+            </div> */}
         </div>
     )
 }
