@@ -1,0 +1,45 @@
+.navbarContainer{
+    width: 100vw;
+    height: 8vh;
+    position: sticky;
+    top: 0;
+    background-color: #4f0a6e9d;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.inputsWrapper{
+    width: 80%;
+    height: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.inputWrapper{
+    width: 20%;
+    height: 50%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.textDescription{
+    width: 50%;
+    height: 100%;
+    background-color: #111111bb;
+    line-height: 2.1em;
+    color: white;
+    font-weight: 500;
+}
+.inputsWrapper input{
+    all:unset;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
