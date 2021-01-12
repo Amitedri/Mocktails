@@ -11,7 +11,7 @@
 
 }
 .inputsWrapper{
-    width: 80%;
+    width: 85%;
     height: 100%;
     align-self: center;
     display: flex;
@@ -36,10 +36,23 @@
     line-height: 2.1em;
     color: white;
     font-weight: 500;
+    padding-right: 5%;
 }
 .inputsWrapper input{
     all:unset;
     width: 50%;
     height: 100%;
     background-color: white;
+}
+.searchButton{
+    all: unset;
+    width: 20%;
+    height: 50%;
+    background-color: white;
+    align-self: center;
+}
+.searchButton:hover{
+    background-color: #4f0a6e9d;
+    color: white ;
+    font-weight: 300;
 }

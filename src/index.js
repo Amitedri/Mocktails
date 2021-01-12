@@ -4,9 +4,13 @@ import './index.css';
 import Layout from './components/Layout'
 import Navbar from './components/Navbar'
 const App = ()=>{
+  const [list, setList] = React.useState('');
+  const getList = (list)=>{
+    return setList(()=>list)
+  }
   return (<div className='App'>
-    <Navbar/>
-    <Layout/>
+    <Navbar setList={getList} />
+    <Layout list={list}/>
   </div>)
 }
 ReactDOM.render(
