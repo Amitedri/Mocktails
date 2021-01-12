@@ -64,7 +64,29 @@ position: relative;
     justify-content: center;
     position: relative;
 }
+@keyframes grow{
+    from{
+        transform: rotateX(0deg);
 
+    }
+    to{
+        transform: rotateX(25deg);
+
+    }
+}
+@keyframes kul{
+    from{
+        z-index: 0;
+    transform: rotateX(0deg);
+
+
+    }
+    to{
+        z-index: 999;
+        transform: rotateX(-25deg);
+
+    }
+}
 .top{
     width: 80%;
     height: 30%;
@@ -73,27 +95,33 @@ position: relative;
     transform: rotateX(-25deg);
    position: absolute;
    top: 5%  ;
+   background-image: url('../../assets/2.jpg');
+   background-size: 100%;
+   transition: all 2s ease-in-out;
+   animation: kul 2s ease-in-out;
 }
 .left{
-    width: 30%;
-    background-color: rgba(71, 71, 71, 0.836);
+    width: 35%;
+    background-color: rgb(247, 247, 247);
     height: 80%;
     border:2px solid black;
     align-self: flex-start;
     transform: rotateX(25deg);
    position: absolute;
-   left: 15%;  ;
+   left: 16%;  ;
    display: flex;
-   flex-direction: column;
-   justify-content: space-around;
+   justify-content: center;
+   animation: grow 1s ease-in-out ;
+
+
 }
-.lefttwo{ width: 30%;
+.right{ width: 30%;
     background: linear-gradient(81.35deg, #8859EC 1.76%, rgba(89, 183, 236, 0) 87.26%, rgba(89, 183, 236, 0) 99.46%);    height: 80%;
     border:2px solid black;
     align-self: flex-start;
     transform: rotateX(25deg);
    position: absolute;
-   left:50%;  ;
+   left:52%;  ;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -126,4 +154,197 @@ position: relative;
        margin: 0;
        font-size: 3em;
        align-self: center;
+
    }
+
+   .introWrapper{
+       height: 85%;
+       width: 85%;
+       background-color: white;
+       align-self: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       background: radial-gradient(64.03% 64.03% at 50% 35.97%, rgba(159, 168, 172, 0.34) 0%, rgba(255, 255, 255, 0) 100%, rgba(203, 202, 202, 0.234579) 100%);
+   }
+
+   .introWrapper h1,h2,h3,h5{
+       margin: 0;
+       align-self: center;
+       color: #111111;
+
+   }
+   .introWrapper h1{
+       margin-top: 25%;
+       font-weight: 700;
+       letter-spacing: 10px;
+       font-size: 3em;
+   }
+   .introWrapper h2{
+       font-weight: 400;
+       font-size: 2em;
+   }
+   .introWrapper h3{
+       font-weight: 200;
+       font-size: 1.6em;
+   }
+
+   .introWrapper h5{
+       letter-spacing: 10px;
+       font-weight: 200;
+       font-size: 1.2em;
+   }
+   .servicesContainer{
+       width: 100%;
+       height:20%;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       margin-top: 5%;
+   }
+   .icons{
+       height: 100%;
+       width: 30%;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       position: relative;
+   }
+   .services{
+    height: 100%;
+       width: 30%;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       position: relative;
+   }
+   .areasOfIntrest{
+    height: 100%;
+       width: 30%;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       position: relative;
+   }
+   .iconWrapper{
+       height: 15%;
+       width: 15%;
+       margin-right: 12%;
+   }
+
+   .iconWrapper img{
+       height: 100%;
+       width: 100%;
+   }
+
+   .icons::after{
+       content: ' ';
+       height: 60%;
+       width: 100%;
+    position: absolute;
+    left:0;
+    top: 15%;
+    border-right: 2px solid #11111155;
+   }
+
+   .skillWrapper{
+       width: 100%;
+       height: 15%;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+   }
+   .skillWrapper img{
+       height: 50%;
+       width: 25%;
+       align-self: center;
+   }
+   .skillText{
+       width: 70%;
+       height: 100%;
+       font-weight: 300;
+       font-size: 0.8em;
+       color: #111111;
+       align-self: flex-start;
+   } 
+   .skillWrapper::after{
+    content: ' ';
+    height: 60%;
+    width: 100%;
+ position: absolute;
+ left:0;
+ top: 15%;
+ border-right: 2px solid #1111111f;
+}
+   .sectorWrapper{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sectorWrapper img{
+    height: 50%;
+    width: 25%;
+    align-self: center;
+}
+.sectorText{
+    width: 70%;
+    height: 100%;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #111111;
+    align-self: flex-start;
+} 
+.sectorWrapper::after{
+    content: ' ';
+    height: 60%;
+    width: 100%;
+ position: absolute;
+ left:0;
+ top: 15%;
+ border-right: 2px solid #11111121;
+}
+.contactContainer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+.contactWrapper{
+    height: 35%;
+    width: 5%;
+    border-radius: 50%;
+    background-color: rgb(139, 139, 139);
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    align-self: center;
+}
+
+.contactWrapper img{
+    height: 80%;
+    width: 80%;
+    align-self: center;
+}
+.socialContainer{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.socialWrapper{
+    height: 35%;
+    width: 5%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    align-self: center;
+}
+.socialWrapper img{
+    height: 60%;
+    width: 60%;
+    align-self: center;
+}
