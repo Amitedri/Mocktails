@@ -1,0 +1,25 @@
+/* IPADS */
+@media screen and (max-width: 1287px) {
+.workContainer{
+    height: 100vh;
+    width: 60vw;
+}
+  }
+  /* MOBILE CSS */
+  @media screen and (max-width: 790px) {
+    .workContainer{
+        height: 100vh;
+        width: 100vw;
+        align-self: center;
+    }
+    
+  }
+  /* ----------- Non-Retina Screens ----------- */
+@media screen and (max-width: 1370px) and (min-width: 992px) {
+  .projectDescriptionContainer span {
+    height: 100%;
+    width: 30%;
+    font-size: 0.8em;
+  }
+ 
+}

@@ -1,0 +1,22 @@
+/* IPADS */
+@media screen and (max-width: 1370px) and (min-width: 992px) {
+  .githubContainer {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .githubContainer p{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .githubContainer {
+    height: 100vh;
+    width: 100vw;
+    align-self: center;
+  }
+  .frontContent p {
+    align-self: flex-start;
+  }
+}
+

@@ -1,0 +1,130 @@
+@media screen and (max-width: 1500px){
+
+  .introWrapper h5 {
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 1.2em;
+  }
+
+  .contactWrapper {
+    height:100%;
+    margin-top:5px;
+  }
+}
+
+@media screen and (max-width: 1287px) {
+  .mobileViewLayout {
+    height: auto;
+    width: auto;
+  }
+  .right {
+    width: 80%;
+    background: linear-gradient(81.35deg, #8859ec 1.76%, rgba(89, 183, 236, 0) 87.26%, rgba(89, 183, 236, 0) 99.46%);
+    transition: all 1s ease-in-out;
+    height: 20%;
+    border: 2px solid black;
+    position: absolute;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right h1 {
+    font-size: 2em;
+  }
+
+  .left {
+    width: 60%;
+    height: 100%;
+    left: 21%;
+    transform: rotateY(0deg);
+  }
+  .introWrapper {
+    width: 100%;
+    justify-content: center;
+  }
+  .icons {
+    margin-left: 5%;
+  }
+  .contactWrapper {
+    height: 30px;
+    width: 30px;
+  }
+  .contactWrapper {
+    height: 10%;
+    width: 8%;
+  }
+}
+/* MOBILE CSS */
+@media screen and (max-width: 790px) {
+  .right {
+    width: 80%;
+    background: linear-gradient(81.35deg, #8859ec 1.76%, rgba(89, 183, 236, 0) 87.26%, rgba(89, 183, 236, 0) 99.46%);
+    transition: all 1s ease-in-out;
+    height: 20%;
+    border: 2px solid black;
+    position: absolute;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: flex-start;
+    display: none;
+  }
+  .right h1 {
+    font-size: 1em;
+  }
+  .left {
+    width: 100vw;
+    left: 0;
+    transform: rotateY(0deg);
+  }
+  .introWrapper {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .iconWrapper {
+    justify-content: center;
+  }
+  .skillText {
+    font-size: 12px;
+    width: auto;
+  }
+
+  .areasOfIntrest {
+    display: none;
+  }
+  .contactContainer {
+    align-self: center;
+    width: 80%;
+    height: 15%;
+  }
+  .contactWrapper {
+    height: 25%;
+    width: 15%;
+    margin-top: 5%;
+  }
+  .services {
+    align-self: center;
+    width: 50%;
+  }
+  .icons {
+    margin-left: 15%;
+  }
+  .icons::after {
+    left: 30%;
+  }
+  .socialContainer {
+    height: 10%;
+  }
+  .socialWrapper {
+    height: 30%;
+    width: 30%;
+  }
+  .socialWrapper img {
+    height: 100%;
+    width: 100%;
+    filter: invert(100%);
+  }
+}

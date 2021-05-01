@@ -1,0 +1,127 @@
+.workContainer {
+  height: 80%;
+  width: 85%;
+  align-self: center;
+  position: relative;
+  background: radial-gradient(
+    64.03% 64.03% at 50% 35.97%,
+    rgba(127, 20, 214, 0.11) 0%,
+    rgba(255, 255, 255, 0) 100%,
+    rgba(203, 202, 202, 0.234579) 100%
+  );
+  animation: touch 0.5s ease-in-out;
+}
+.workContainer::before {
+  content: " ";
+  height: 0;
+  width: 12%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 2px solid #7c4fff;
+  border-left: 2px solid #7c4fff;
+}
+.workContainer::after {
+  content: " ";
+  height: 0;
+  width: 12%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-right: 2px solid #7c4fff;
+  border-bottom: 2px solid #7c4fff;
+}
+
+.workHeader {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: flex-end;
+  margin-top: 5%;
+  position: relative;
+  margin-left: 5%;
+}
+.workHeader::before {
+  content: " ";
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid #7c4fff;
+}
+.workHeader h1 {
+  color: #7c4fff;
+  margin: 0;
+  align-self: center;
+  font-size: 3em;
+  font-weight: 500;
+}
+.workHeader span {
+  color: #7c4fff;
+  align-self: center;
+  font-size: 3em;
+  font-weight: 500;
+  white-space: normal;
+}
+
+.workProjectsContainer {
+  height: 50%;
+  width: 100%;
+  /* background-color: blue; */
+  position: relative;
+  /* margin-top: 5%; */
+  display: flex;
+  flex-direction: row;
+}
+
+.projectsDisplay {
+  width: 80%;
+  height: 100%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.projectsDisplay img {
+  height: 100%;
+  width: 100%;
+}
+.nextButton {
+  transform: rotate(180deg);
+  height: 25%;
+  align-self: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.prevButton {
+  height: 25%;
+  align-self: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.prevButton:hover {
+  animation: touch 2s ease-in-out;
+}
+.nextButton:hover {
+  animation: touch 2s ease-in-out;
+}
+
+.projectDescriptionContainer h1 {
+  margin: 0;
+}
+.projectDescriptionContainer span {
+  content: " ";
+  height: 100%;
+  width: 30%;
+  font-size: 1.2em;
+}
+
+@keyframes touch {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}

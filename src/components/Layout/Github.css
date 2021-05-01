@@ -1,0 +1,81 @@
+.githubContainer {
+  height: 85%;
+  width: 85%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: #fefefe;
+  margin-top: 5%;
+  background: radial-gradient(84.71% 280.2% at 14.32% 24.69%, #3b18ffb9 0%, rgba(254, 6, 6, 0.637) 100%);
+  animation: touch 0.5s ease-in-out;
+}
+.githubContainer h1 {
+  align-self: center;
+  margin: 0;
+}
+
+.techStack {
+  height: 88%;
+  width: 35%;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3%;
+  position: relative;
+  margin-top: 5%;
+}
+
+.techItem {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.techIcon {
+  height: 100%;
+  width: 15%;
+}
+.techDescription {
+    color: white;
+}
+
+.gitProjects {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.wrappedGitItem {
+  width:100%;
+  height: 13%;
+  background-color: white;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-bottom: 5%;
+  text-align: center;
+  border-radius: 5px;
+}
+.wrappedGitItem:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.itemName{
+    height: 35%;
+    width: 100%;
+}
+.itemDescription{
+    height: 65%;
+    width: 100%;
+    background: linear-gradient(180deg, #d172e2 0%, rgba(196, 196, 196, 0) 100%);    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    align-self: center;
+    color: #000000;
+    font-weight: 300;
+
+}
