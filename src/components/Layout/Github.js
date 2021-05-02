@@ -1,7 +1,7 @@
 import React from "react";
 import "./Github.css";
 import "./githubMobile.css";
-import github from "../../assets/Icons/60-01 1.svg";
+import github from "../../assets/Icons/github.svg";
 import heroku from "../../assets/Icons/heroku.svg";
 import mongoDB from "../../assets/Icons/mongodb.svg";
 import react from "../../assets/Icons/react.svg";
@@ -17,20 +17,21 @@ import typescript from "../../assets/Icons/typescript.svg";
 
 const Github = () => {
   const techIcons = [
-    { src: typescript, text: "Typescript " },
-    { src: javascript, text: "Javascript/es5/es6" },
-    { src: react, text: "React" },
-    { src: node, text: "NodeJS Environemnt" },
-    { src: amazong, text: "AWS Cloud Services" },
-    { src: html, text: "HTML,CSS3" },
-    { src: webpack, text: "Webpack" },
-    { src: babel, text: "Babel" },
-    { src: less, text: "Less Css Processor " },
-    { src: github, text: "Git version Control" },
-    { src: heroku, text: "Heroku Hosting" },
-    { src: mongoDB, text: "MongoDB" },
-    { src: socket, text: "SocketIO" },
+    { src: typescript, text: "Typescript",grage:90 },
+    { src: javascript, text: "Javascript/es5/es6",grage:90 },
+    { src: react, text: "React",grage:90 },
+    { src: node, text: "NodeJS Environemnt",grage:90 },
+    { src: amazong, text: "AWS Cloud Services",grage:90 },
+    { src: html, text: "HTML,CSS3",grage:90 },
+    { src: webpack, text: "Webpack",grage:90 },
+    { src: babel, text: "Babel",grage:90 },
+    { src: less, text: "Less Css Processor ",grage:90 },
+    { src: github, text: "Git version Control",grage:90 },
+    { src: heroku, text: "Heroku Hosting",grage:90 },
+    { src: mongoDB, text: "Mongo DB",grage:90 },
+    { src: socket, text: "SocketIO",grage:90 },
   ];
+
   const projectsArray = [
     {
       name: "A portfolio for a Chef",

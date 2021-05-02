@@ -1,5 +1,4 @@
-@media screen and (max-width: 1500px){
-
+@media screen and (max-width: 1500px) and (min-width: 1288px) {
   .introWrapper h5 {
     letter-spacing: 2px;
     font-weight: 200;
@@ -7,12 +6,12 @@
   }
 
   .contactWrapper {
-    height:100%;
-    margin-top:5px;
+    height: 100%;
+    margin-top: 5px;
   }
 }
 
-@media screen and (max-width: 1287px) {
+@media screen and (max-width: 1287px) and (min-width: 791px) {
   .mobileViewLayout {
     height: auto;
     width: auto;
@@ -76,6 +75,7 @@
   }
   .left {
     width: 100vw;
+    height: 100%;
     left: 0;
     transform: rotateY(0deg);
   }
@@ -127,4 +127,13 @@
     width: 100%;
     filter: invert(100%);
   }
+}
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .icons::after {
+    left: 20%;
+  }
+.introWrapper{
+  height: 100vh;
+  width: 100vw;
+}
 }
